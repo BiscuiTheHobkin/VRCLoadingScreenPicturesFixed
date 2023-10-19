@@ -6,7 +6,7 @@ using Loading_screen_pictures;
 using System.Linq;
 using System.Collections;
 
-[assembly: MelonInfo(typeof(LoadingScreenPictures), "Loading Screen Pictures", "1.3.3", "MarkViews | Fixed by BiscuiTheHobkin |", "https://github.com/markviews/LoadingScreenPictures")]
+[assembly: MelonInfo(typeof(LoadingScreenPictures), "Loading Screen Pictures", "1.3.4", "MarkViews | Fixed by BiscuiTheHobkin |", "https://github.com/markviews/LoadingScreenPictures")]
 
 namespace Loading_screen_pictures {
     internal class LoadingScreenPictures : MelonMod {
