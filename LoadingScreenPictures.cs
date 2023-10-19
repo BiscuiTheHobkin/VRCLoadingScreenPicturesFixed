@@ -7,7 +7,6 @@ using System.Linq;
 using System.Collections;
 
 [assembly: MelonInfo(typeof(LoadingScreenPictures), "Loading Screen Pictures", "1.3.3", "MarkViews | Fixed by BiscuiTheHobkin |", "https://github.com/markviews/LoadingScreenPictures")]
-[assembly: MelonGame("VRChat", "VRChat")]
 
 namespace Loading_screen_pictures {
     internal class LoadingScreenPictures : MelonMod {
@@ -23,7 +22,7 @@ namespace Loading_screen_pictures {
 
         public override void OnApplicationStart() {
             MelonCoroutines.Start(UiManagerInitializer());
-            string default_dir = Path.Combine(Environment.CurrentDirectory, "UserData/LoadingPictureImage");
+            string default_dir = Path.Combine("/storage/emulated/0/Pictures/VRChat");
             MelonPreferences.CreateCategory("LoadingScreenPictures", "Loading Screen Pictures");
             MelonPreferences.CreateEntry("LoadingScreenPictures", "directory", default_dir, "Folder to get pictures from");
             MelonPreferences.CreateEntry("LoadingScreenPictures", "enabled", true, "Enable");
