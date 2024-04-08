@@ -8,8 +8,10 @@ using System.Collections;
 
 [assembly: MelonInfo(typeof(LoadingScreenPictures), "Loading Screen Pictures", "1.3.4", "MarkViews | Fixed by BiscuiTheHobkin |", "https://github.com/markviews/LoadingScreenPictures")]
 
-namespace Loading_screen_pictures {
-    internal class LoadingScreenPictures : MelonMod {
+namespace Loading_screen_pictures
+{
+    internal class LoadingScreenPictures : MelonMod
+    {
 
         private GameObject mainFrame;
         private GameObject cube;
@@ -20,28 +22,32 @@ namespace Loading_screen_pictures {
         private bool enabled = true;
         private Vector3 originalSize;
 
-        public override void OnApplicationStart() {
+        public override void OnApplicationStart()
+        {
             MelonCoroutines.Start(UiManagerInitializer());
-            string default_dir = Path.Combine("/storage/emulated/0/Pictures/VRChat");
+            string default_dir = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures) + @"\VRChat";
             MelonPreferences.CreateCategory("LoadingScreenPictures", "Loading Screen Pictures");
             MelonPreferences.CreateEntry("LoadingScreenPictures", "directory", default_dir, "Folder to get pictures from");
             MelonPreferences.CreateEntry("LoadingScreenPictures", "enabled", true, "Enable");
             folder_dir = MelonPreferences.GetEntryValue<string>("LoadingScreenPictures", "directory");
             enabled = MelonPreferences.GetEntryValue<bool>("LoadingScreenPictures", "enabled");
 
-            if (default_dir != folder_dir && !Directory.Exists(folder_dir)) {
+            if (default_dir != folder_dir && !Directory.Exists(folder_dir))
+            {
                 folder_dir = default_dir;
                 MelonLogger.Msg("Couldn't find configured directory, using default directory");
             }
         }
 
-        public IEnumerator UiManagerInitializer() {
+        public IEnumerator UiManagerInitializer()
+        {
             while (GameObject.Find("MenuContent") == null) yield return null;
             setup();
             initUI = true;
         }
 
-        public override void OnPreferencesSaved() {
+        public override void OnPreferencesSaved()
+        {
             enabled = MelonPreferences.GetEntryValue<bool>("LoadingScreenPictures", "enabled");
             if (enabled) setup();
             else disable();
@@ -50,12 +56,15 @@ namespace Loading_screen_pictures {
         private float wait = 0.0f;
         private bool hidden = false;
 
-        public override void OnUpdate() {
+        public override void OnUpdate()
+        {
             if (!enabled) return;
 
-            if (Time.time > wait) {
+            if (Time.time > wait)
+            {
                 wait += 5f;
-                if (hidden) {
+                if (hidden)
+                {
                     hidden = false;
                     setup();
                 }
@@ -67,32 +76,39 @@ namespace Loading_screen_pictures {
             changePic();
         }
 
-        public override void OnSceneWasInitialized(int buildIndex, string sceneName) {
-            switch (buildIndex) {
+        public override void OnSceneWasInitialized(int buildIndex, string sceneName)
+        {
+            switch (buildIndex)
+            {
                 case 1:
                 case 2:
                     break;
                 default: //Causes this to run only once instead of multiple times.
-                    if (initUI && lastTexture == null) 
+                    if (initUI && lastTexture == null)
                         setup();
                     break;
             }
         }
 
-        private void changePic() {
+        private void changePic()
+        {
             Texture2D texture = new Texture2D(2, 2);
             ImageConversion.LoadImage(texture, File.ReadAllBytes(randImage()));
             pic.material.mainTexture = texture;
-            if (pic.material.mainTexture.height > pic.material.mainTexture.width) {
+            if (pic.material.mainTexture.height > pic.material.mainTexture.width)
+            {
                 cube.transform.localScale = new Vector3(0.099f, 1, 0.175f);
                 mainFrame.transform.localScale = new Vector3(10.80f, 19.20f, 1);
-            } else {
+            }
+            else
+            {
                 cube.transform.localScale = new Vector3(0.175f, 1, 0.099f);
                 mainFrame.transform.localScale = new Vector3(19.20f, 10.80f, 1);
             }
         }
 
-        private void disable() {
+        private void disable()
+        {
             MelonLogger.Msg("Disabled");
             if (mainFrame) mainFrame.transform.localScale = originalSize;
             if (screenRender) screenRender.enabled = true;
@@ -100,7 +116,8 @@ namespace Loading_screen_pictures {
             lastTexture = null;
         }
 
-        private void setup() {
+        private void setup()
+        {
             if (!enabled || lastTexture != null) return;
             mainFrame = GameObject.Find("MenuContent/Popups/LoadingPopup/3DElements/LoadingInfoPanel/InfoPanel_Template_ANIM/SCREEN/mainFrame");
             originalSize = mainFrame.transform.localScale;
@@ -108,7 +125,8 @@ namespace Loading_screen_pictures {
             GameObject screen = GameObject.Find("MenuContent/Popups/LoadingPopup/3DElements/LoadingInfoPanel/InfoPanel_Template_ANIM/SCREEN/mainScreen");
             //check if screenshots folder is empty
             String imageLink = randImage();
-            if (imageLink == null) {
+            if (imageLink == null)
+            {
                 MelonLogger.Msg("No screenshots found in: " + folder_dir);
                 return;
             }
@@ -133,10 +151,13 @@ namespace Loading_screen_pictures {
             screenRender.enabled = false;
 
             //resize frame
-            if (pic.material.mainTexture.height > pic.material.mainTexture.width) {
+            if (pic.material.mainTexture.height > pic.material.mainTexture.width)
+            {
                 cube.transform.localScale = new Vector3(0.099f, 1, 0.175f);
                 mainFrame.transform.localScale = new Vector3(10.80f, 19.20f, 1);
-            } else {
+            }
+            else
+            {
                 cube.transform.localScale = new Vector3(0.175f, 1, 0.099f);
                 mainFrame.transform.localScale = new Vector3(19.20f, 10.80f, 1);
             }
@@ -148,11 +169,12 @@ namespace Loading_screen_pictures {
             MelonLogger.Msg("Setup Game Objects.");
         }
 
-        private String randImage() {
+        private String randImage()
+        {
             if (!Directory.Exists(folder_dir)) return null;
             string[] pics = Directory.GetFiles(folder_dir, "*.*", SearchOption.AllDirectories).Where(s => s.EndsWith(".png") || s.EndsWith(".jpeg")).ToArray();
             if (pics.Length == 0) return null;
-            int randPic = new Il2CppSystem.Random().Next(0, pics.Length);
+            int randPic = new Il2CppSystem.Random().Next(1, pics.Length);
             return pics[randPic].ToString();
         }
 

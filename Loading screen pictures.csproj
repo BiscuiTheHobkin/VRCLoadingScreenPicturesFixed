@@ -30,382 +30,364 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Assembly-CSharp, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Il2Cpp">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Dependencies\SupportModules\Il2Cpp.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Common">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.HarmonySupport">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Dependencies\SupportModules\Il2CppInterop.HarmonySupport.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2CppInterop.Runtime">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Dependencies\SupportModules\Il2CppInterop.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="Il2Cppmscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Il2Cppwebsocket-sharp">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Il2Cppwebsocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MelonLoader, Version=0.5.7.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\XEngine-Quest\Libs\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\net35\MelonLoader.dll</HintPath>
     </Reference>
-    <Reference Include="Il2CppMicrosoft.Extensions.Logging.Abstractions">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppMicrosoft.Extensions.Logging.Abstractions.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppMono.Security">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppMono.Security.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2Cppmscorlib">
-      <HintPath>..\XEngine-Quest\Libs\Il2Cppmscorlib.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppNewtonsoft.Json">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppNewtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Buffers">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Buffers.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Collections.Immutable">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Collections.Immutable.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Configuration">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Configuration.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Core">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Data">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Data.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Diagnostics.StackTrace">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Diagnostics.StackTrace.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.Globalization.Extensions">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.Globalization.Extensions.dll</HintPath>
-    </Reference>
-    <Reference Include="Il2CppSystem.IO.Compression">
-      <HintPath>..\XEngine-Quest\Libs\Il2CppSystem.IO.Compression.dll</HintPath>
-    </Reference>
-    <Reference Include="MeaMod.DNS">
-      <HintPath>..\XEngine-Quest\Libs\MeaMod.DNS.dll</HintPath>
-    </Reference>
-    <Reference Include="MelonLoader, Version=0.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="UnhollowerBaseLib, Version=0.4.18.0, Culture=neutral, PublicKeyToken=null" />
+    <Reference Include="Unity.Burst, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\XEngine-Quest\Libs\MelonLoader.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Burst.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="UnhollowerBaseLib">
-      <HintPath>..\XEngine-Quest\Libs\UnhollowerBaseLib.dll</HintPath>
-    </Reference>
-    <Reference Include="UnhollowerRuntimeLib">
-      <HintPath>..\XEngine-Quest\Libs\UnhollowerRuntimeLib.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask">
-      <HintPath>..\XEngine-Quest\Libs\UniTask.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask.Addressables">
-      <HintPath>..\XEngine-Quest\Libs\UniTask.Addressables.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask.DOTween">
-      <HintPath>..\XEngine-Quest\Libs\UniTask.DOTween.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask.Linq">
-      <HintPath>..\XEngine-Quest\Libs\UniTask.Linq.dll</HintPath>
-    </Reference>
-    <Reference Include="UniTask.TextMeshPro">
-      <HintPath>..\XEngine-Quest\Libs\UniTask.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst">
-      <HintPath>..\XEngine-Quest\Libs\Unity.Burst.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Burst.Unsafe">
-      <HintPath>..\XEngine-Quest\Libs\Unity.Burst.Unsafe.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.InputSystem">
-      <HintPath>..\XEngine-Quest\Libs\Unity.InputSystem.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Mathematics">
-      <HintPath>..\XEngine-Quest\Libs\Unity.Mathematics.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Postprocessing.Runtime">
-      <HintPath>..\XEngine-Quest\Libs\Unity.Postprocessing.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.TextMeshPro">
-      <HintPath>..\XEngine-Quest\Libs\Unity.TextMeshPro.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.Timeline">
-      <HintPath>..\XEngine-Quest\Libs\Unity.Timeline.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Management">
-      <HintPath>..\XEngine-Quest\Libs\Unity.XR.Management.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.XR.Oculus">
-      <HintPath>..\XEngine-Quest\Libs\Unity.XR.Oculus.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AccessibilityModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AccessibilityModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AIModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AndroidJNIModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AndroidJNIModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AnimationModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AnimationModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ARModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ARModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AssetBundleModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AssetBundleModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.AudioModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.AudioModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClothModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ClothModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterInputModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ClusterInputModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ClusterRendererModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ClusterRendererModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.CrashReportingModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.CrashReportingModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DirectorModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.DirectorModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.DSPGraphModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.DSPGraphModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GameCenterModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.GameCenterModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.GridModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.GridModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.HotReloadModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.HotReloadModule.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Il2CppAssetBundleManager">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.Il2CppAssetBundleManager.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.Il2CppImageConversionManager">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.Il2CppImageConversionManager.dll</HintPath>
-    </Reference>
-    <Reference Include="UnityEngine.ImageConversionModule, Version=3.7.1.6, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Unity.Burst.Unsafe, Version=4.0.5.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ImageConversionModule.dll</HintPath>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Burst.Unsafe.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.IMGUIModule.dll</HintPath>
+    <Reference Include="Unity.Collections">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Collections.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.InputLegacyModule.dll</HintPath>
+    <Reference Include="Unity.InputSystem, Version=1.3.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.InputSystem.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.InputModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.InputModule.dll</HintPath>
+    <Reference Include="Unity.Mathematics, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Mathematics.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.JSONSerializeModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.JSONSerializeModule.dll</HintPath>
+    <Reference Include="Unity.Postprocessing.Runtime, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.LocalizationModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.LocalizationModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.ParticleSystemModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ParticleSystemModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Configuration">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Configuration.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.PerformanceReportingModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Device">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Device.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.Physics2DModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.Physics2DModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Environments.Internal">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Environments.Internal.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.PhysicsModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Internal">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Internal.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.ProfilerModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ProfilerModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Registration">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Registration.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.ScreenCaptureModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Scheduler">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Scheduler.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SharedInternalsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SharedInternalsModule.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Telemetry">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Telemetry.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SpatialTracking">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SpatialTracking.dll</HintPath>
+    <Reference Include="Unity.Services.Core.Threading">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Services.Core.Threading.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SpriteMaskModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SpriteMaskModule.dll</HintPath>
+    <Reference Include="Unity.TextMeshPro, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SpriteShapeModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SpriteShapeModule.dll</HintPath>
+    <Reference Include="Unity.Timeline, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.StreamingModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.StreamingModule.dll</HintPath>
+    <Reference Include="Unity.XR.Management, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.XR.Management.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SubstanceModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SubstanceModule.dll</HintPath>
+    <Reference Include="Unity.XR.OpenVR">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\Unity.XR.OpenVR.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.SubsystemsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.SubsystemsModule.dll</HintPath>
+    <Reference Include="UnityEngine, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TerrainModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TerrainModule.dll</HintPath>
+    <Reference Include="UnityEngine.AccessibilityModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AccessibilityModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TerrainPhysicsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    <Reference Include="UnityEngine.AIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextCoreModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TextCoreModule.dll</HintPath>
+    <Reference Include="UnityEngine.AndroidJNIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AndroidJNIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TextRenderingModule.dll</HintPath>
+    <Reference Include="UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AnimationModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TilemapModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TilemapModule.dll</HintPath>
+    <Reference Include="UnityEngine.ARModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ARModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.TLSModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.TLSModule.dll</HintPath>
+    <Reference Include="UnityEngine.AssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AssetBundleModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UI.dll</HintPath>
+    <Reference Include="UnityEngine.AudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.AudioModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UIElementsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UIElementsModule.dll</HintPath>
+    <Reference Include="UnityEngine.ClothModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ClothModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UIModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UIModule.dll</HintPath>
+    <Reference Include="UnityEngine.ClusterInputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterInputModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UmbraModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UmbraModule.dll</HintPath>
+    <Reference Include="UnityEngine.ClusterRendererModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ClusterRendererModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UNETModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UNETModule.dll</HintPath>
+    <Reference Include="UnityEngine.ContentLoadModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ContentLoadModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityAnalyticsModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityConnectModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityConnectModule.dll</HintPath>
+    <Reference Include="UnityEngine.CrashReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.CrashReportingModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityTestProtocolModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    <Reference Include="UnityEngine.DirectorModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.DirectorModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    <Reference Include="UnityEngine.DSPGraphModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.DSPGraphModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    <Reference Include="UnityEngine.GameCenterModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.GameCenterModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.GIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    <Reference Include="UnityEngine.GridModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.GridModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    <Reference Include="UnityEngine.HotReloadModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.HotReloadModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VehiclesModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.VehiclesModule.dll</HintPath>
+    <Reference Include="UnityEngine.ImageConversionModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ImageConversionModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VFXModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.VFXModule.dll</HintPath>
+    <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.IMGUIModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VideoModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.VideoModule.dll</HintPath>
+    <Reference Include="UnityEngine.InputLegacyModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.VRModule.dll</HintPath>
+    <Reference Include="UnityEngine.InputModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.InputModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.WindModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.WindModule.dll</HintPath>
+    <Reference Include="UnityEngine.JSONSerializeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.JSONSerializeModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.XRModule">
-      <HintPath>..\XEngine-Quest\Libs\UnityEngine.XRModule.dll</HintPath>
+    <Reference Include="UnityEngine.LocalizationModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.LocalizationModule.dll</HintPath>
     </Reference>
-    <Reference Include="ValueTupleBridge">
-      <HintPath>..\XEngine-Quest\Libs\ValueTupleBridge.dll</HintPath>
+    <Reference Include="UnityEngine.NVIDIAModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.NVIDIAModule.dll</HintPath>
     </Reference>
-    <Reference Include="vrc-oscquery-lib">
-      <HintPath>..\XEngine-Quest\Libs\vrc-oscquery-lib.dll</HintPath>
+    <Reference Include="UnityEngine.ParticleSystemModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ParticleSystemModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Collections">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Collections.dll</HintPath>
+    <Reference Include="UnityEngine.PerformanceReportingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.PerformanceReportingModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Dynamics">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Dynamics.dll</HintPath>
+    <Reference Include="UnityEngine.Physics2DModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.Physics2DModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.SDK3.Depthkit">
-      <HintPath>..\XEngine-Quest\Libs\VRC.SDK3.Depthkit.dll</HintPath>
+    <Reference Include="UnityEngine.PhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.PhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.SDK3.Dynamics.Contact">
-      <HintPath>..\XEngine-Quest\Libs\VRC.SDK3.Dynamics.Contact.dll</HintPath>
+    <Reference Include="UnityEngine.ProfilerModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ProfilerModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.SDK3.Dynamics.PhysBone">
-      <HintPath>..\XEngine-Quest\Libs\VRC.SDK3.Dynamics.PhysBone.dll</HintPath>
+    <Reference Include="UnityEngine.PropertiesModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.PropertiesModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.SDKBase.Editor.BuildPipeline">
-      <HintPath>..\XEngine-Quest\Libs\VRC.SDKBase.Editor.BuildPipeline.dll</HintPath>
+    <Reference Include="UnityEngine.Purchasing">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.Purchasing.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.dll</HintPath>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.ClientBindings">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.ClientBindings.dll</HintPath>
+    <Reference Include="UnityEngine.ScreenCaptureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.ScreenCaptureModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.Common">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.Common.dll</HintPath>
+    <Reference Include="UnityEngine.SharedInternalsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SharedInternalsModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.Security">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.Security.dll</HintPath>
+    <Reference Include="UnityEngine.SpatialTracking, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.Serialization.AOT">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.Serialization.AOT.dll</HintPath>
+    <Reference Include="UnityEngine.SpriteMaskModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteMaskModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.Serialization.OdinSerializer">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.Serialization.OdinSerializer.dll</HintPath>
+    <Reference Include="UnityEngine.SpriteShapeModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SpriteShapeModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.VM">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.VM.dll</HintPath>
+    <Reference Include="UnityEngine.StreamingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.StreamingModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.VRCWrapperModules">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.VRCWrapperModules.dll</HintPath>
+    <Reference Include="UnityEngine.SubstanceModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SubstanceModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Udon.Wrapper">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Udon.Wrapper.dll</HintPath>
+    <Reference Include="UnityEngine.SubsystemsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.SubsystemsModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.UI.Core">
-      <HintPath>..\XEngine-Quest\Libs\VRC.UI.Core.dll</HintPath>
+    <Reference Include="UnityEngine.TerrainModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.UI.Elements">
-      <HintPath>..\XEngine-Quest\Libs\VRC.UI.Elements.dll</HintPath>
+    <Reference Include="UnityEngine.TerrainPhysicsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TerrainPhysicsModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.UI.Shared">
-      <HintPath>..\XEngine-Quest\Libs\VRC.UI.Shared.dll</HintPath>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRC.Utility">
-      <HintPath>..\XEngine-Quest\Libs\VRC.Utility.dll</HintPath>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCCore-Editor">
-      <HintPath>..\XEngine-Quest\Libs\VRCCore-Editor.dll</HintPath>
+    <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCCore-Standalone">
-      <HintPath>..\XEngine-Quest\Libs\VRCCore-Standalone.dll</HintPath>
+    <Reference Include="UnityEngine.TilemapModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TilemapModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCLog">
-      <HintPath>..\XEngine-Quest\Libs\VRCLog.dll</HintPath>
+    <Reference Include="UnityEngine.TLSModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.TLSModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCSDK2">
-      <HintPath>..\XEngine-Quest\Libs\VRCSDK2.dll</HintPath>
+    <Reference Include="UnityEngine.UI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="VRCSDK3">
-      <HintPath>..\XEngine-Quest\Libs\VRCSDK3.dll</HintPath>
+    <Reference Include="UnityEngine.UIElementsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UIElementsModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCSDK3A">
-      <HintPath>..\XEngine-Quest\Libs\VRCSDK3A.dll</HintPath>
+    <Reference Include="UnityEngine.UIModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UIModule.dll</HintPath>
     </Reference>
-    <Reference Include="VRCSDKBase">
-      <HintPath>..\XEngine-Quest\Libs\VRCSDKBase.dll</HintPath>
+    <Reference Include="UnityEngine.UmbraModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsCommonModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsCommonModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\VRChat\MelonLoader\Il2CppAssemblies\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
       <HintPath>..\XEngine-Quest\Libs\websocket-sharp.dll</HintPath>
